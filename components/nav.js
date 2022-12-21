@@ -16,7 +16,7 @@ export default function Nav() {
            width={47}
            alt='profile-pic'
          />
-         <span className='font-bold transition duration-300 ease-linear text-[17px] md:text-[32px]  hover:text-rose-400'>
+         <span className='font-bold transition duration-300 ease-linear text-[17px] md:text-[34px]  hover:text-rose-400'>
            AZEEZAT OLAITAN
          </span>
        </div>
@@ -29,7 +29,7 @@ export default function Nav() {
                viewBox='0 0 24 24'
                stroke-width='1.5'
                stroke='currentColor'
-               class='w-14 h-14'
+               class='w-16 h-16'
              >
                <path
                  stroke-linecap='round'
@@ -44,7 +44,7 @@ export default function Nav() {
                viewBox='0 0 24 24'
                stroke-width='1.5'
                stroke='currentColor'
-               class='w-14 h-14'
+               class='w-16 h-16'
              >
                <path
                  stroke-linecap='round'

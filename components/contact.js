@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Contact() {
    const [formData, setFormData] = useState({
@@ -91,7 +92,8 @@ export default function Contact() {
            Submit
          </button>
        </form>
+       <Link className="text-slate-400 text-sm relative bottom-10 md:left-14 md:text-base" href="https://www.vecteezy.com/free-vector/light-grey-background" target="_blank" rel="noopener noreferrer">Background Image by Vecteezy</Link>
      </div>
    </main>
- );
+ )
 }
