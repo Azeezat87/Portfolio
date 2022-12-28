@@ -57,7 +57,7 @@ export default function Footer() {
      <span className='mx-10 my-8 border-t border-solid border-[#444] shadow-[0_-1px_#000000b3] md:mx-0 md:mt-20 md:mb-10'></span>
      <div className='px-10 flex justify-between md:p-0 md:mt-4 md:items-center'>
        <small className='text-gray-300 md:text-[24px]'>
-         © Copyright 2022. Made by{' '}
+         © Copyright {new Date().getFullYear()}. Made by
          <b className='underline tracking-wider'>Azeezat Olaitan</b>
        </small>
        <p className='uppercase text-gray-300 text-[18px] md:tracking-wider font-bold md:text-[30px]'>

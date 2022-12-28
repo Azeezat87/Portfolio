@@ -1,4 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+
 import Image from 'next/image'
+
+
 
 export default function Project() {
  return (
@@ -27,7 +31,7 @@ export default function Project() {
            <Image
              priority
              src='/images/keeneye1.jpg'
-             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[424px] md:left-[123px] md:h-[346px] md:w-[540px]'
+             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[427px] md:left-[129px] md:h-[346px] md:w-[538px]'
              height={492}
              width={492}
              alt='project'
@@ -60,7 +64,7 @@ export default function Project() {
            <Image
              priority
              src='/images/keeneye1.jpg'
-             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[424px] md:left-[123px] md:h-[346px] md:w-[540px]'
+             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[427px] md:left-[129px] md:h-[346px] md:w-[538px]'
              height={492}
              width={492}
              alt='project'
@@ -93,7 +97,7 @@ export default function Project() {
            <Image
              priority
              src='/images/keeneye1.jpg'
-             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[424px] md:left-[123px] md:h-[346px] md:w-[540px]'
+             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[427px] md:left-[129px] md:h-[346px] md:w-[538px]'
              height={492}
              width={492}
              alt='project'
@@ -123,22 +127,19 @@ export default function Project() {
              width={720}
              alt='project'
            />
-           <Image
-             priority
-             src='/images/keeneye1.jpg'
-             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[424px] md:left-[123px] md:h-[346px] md:w-[540px]'
-             height={492}
-             width={492}
+           <img
+             src='/images/tenzies.jpg'
+             className='relative top-[-54%] left-[15.9%] rounded h-[315px] w-[489px] md:bottom-[427px] md:left-[129px] md:h-[346px] md:w-[538px]'
              alt='project'
            />
          </div>
          <div className='max-w-[450px] mt-12 md:-mt-56 md:max-w-[100%] md:flex md:flex-col md:items-center md:mx-10 '>
            <h3 className='font-bold text-2xl mb-6 md:text-[45px] md:mb-10'>
-             Keen Eyesight
+             Tenzies Game
            </h3>
            <p className='text-lg text-[#666] md:text-[32px] md:leading-[50px] md:text-center md:mb-5'>
-             Keen Sight is a logistic company that provides prompt and reliable
-             transportation services for people and goods.
+             Tenzies Game App was built in my react course. After the course, i
+             rebuilt it from scratch and added extra credits to it.
            </p>
            <button className='px-12 py-3 mt-8 text-lg tracking-wider font-semibold transition duration-300 ease-linear rounded-md shadow-[0_5px_15px_0_rgb(0_0_0_/_15%)] bg-rose-400 hover:-translate-y-1 uppercase md:mt-3 md:mb-[350px] md:text-3xl md:px-[70px] md:py-6 md:rounded-lg'>
              case study
@@ -159,7 +160,7 @@ export default function Project() {
            <Image
              priority
              src='/images/keeneye1.jpg'
-             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[424px] md:left-[123px] md:h-[346px] md:w-[540px]'
+             className='relative top-[-54%] left-[15.7%] rounded md:bottom-[427px] md:left-[129px] md:h-[346px] md:w-[538px]'
              height={492}
              width={492}
              alt='project'
