@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { config } from '../utils/config'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
@@ -8,6 +9,25 @@ import {
   faSquareFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 
+const SocialAccounts = ({ href, icon }) => (
+  <Link href={href}
+        target='_blank'
+        rel='noopener noreferrer'>
+    <FontAwesomeIcon
+           icon={icon}
+           size='2x'
+           className='p-2 rounded-md hover:bg-rose-100 cursor-pointer'/>
+  </Link>
+)
+
+const socialMedia = [
+  { href: config.linkedin_url, icon: faLinkedin },
+  { href: config.twitter_url, icon: faTwitter },
+  { href: config.instagram_url, icon: faInstagram },
+  { href: config.gitHub_url, icon: faGithub },
+  { href: config.facebook_url, icon: faSquareFacebook },
+];
+
 export default function Hero() {
  return (
    <main
@@ -15,32 +35,15 @@ export default function Hero() {
      className="min-h-screen bg-[url('/images/background1.jpg')] bg-no-repeat bg-cover bg-top brightness-100 flex justify-center items-center md:pt-20"
    >
      <div className='bg-white min-h-[240px] min-w-[60px] mt-8 absolute left-0 flex flex-col p-2 md:hidden'>
-       <FontAwesomeIcon
-         icon={faLinkedin}
-         size='2x'
-         className='p-2 rounded-md hover:bg-rose-100 cursor-pointer'
-       />
-       <FontAwesomeIcon
-         icon={faTwitter}
-         size='2x'
-         className='p-2 rounded-md hover:bg-rose-100 cursor-pointer'
-       />
-       <FontAwesomeIcon
-         icon={faInstagram}
-         size='2x'
-         className='p-2 rounded-md hover:bg-rose-100 cursor-pointer'
-       />
-       <FontAwesomeIcon
-         icon={faGithub}
-         size='2x'
-         className='p-2 rounded-md hover:bg-rose-100 cursor-pointer'
-       />
-       <FontAwesomeIcon
-         icon={faSquareFacebook}
-         size='2x'
-         className='p-2 rounded-md hover:bg-rose-100 cursor-pointer'
-       />
+       {socialMedia.map((item, index) => (
+         <SocialAccounts
+           key={index}
+           href={item.href}
+           icon={item.icon}
+         />
+       ))}
      </div>
+
      <div className='flex flex-col items-center mt-48 md:mt-60 '>
        <h1 className='text-[60px] font-extrabold tracking-wider text-black uppercase mb-8 md:text-[85px] md:text-center md:mb-12'>
          hey, i&apos;m azeezat olaitan

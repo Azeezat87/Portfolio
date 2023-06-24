@@ -1,11 +1,26 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {useState} from 'react'
+import { useState } from 'react'
+
+
+const ListItems = ({href, text}) => (
+  <li className='mr-12 text-[15px] font-bold uppercase tracking-wider md:block md:px-[2rem] md:py-[2.8rem] md:text-[1.6rem] md:text-[#333] md:text-right md:border-y md:border-solid md:border-[#eee] md:mr-0 md:pr-20 transition duration-300 ease-linear hover:text-rose-400 '>
+    <Link href={href}>{text}</Link>
+  </li>
+);
+
+const menuItems = [
+  { href: '#home', text: 'home' },
+  { href: '#about', text: 'about' },
+  { href: '#project', text: 'projects' },
+  { href: '#contact', text: 'contact' },
+  { href: '/blog', text: 'blog' },
+];
 
 export default function Nav() {
   const [navbar, setNavbar] = useState(false)
  return (
-   <nav className='fixed top-0 flex items-center justify-between w-full py-5 overflow-hidden bg-white px-14 shadow-[0_10px_100px_rgb(0_0_0_/_10%)] z-[1000] md:overflow-visible md:py-6'>
+   <nav className='fixed top-0 flex items-center justify-between w-full py-5 overflow-hidden bg-white pl-14  shadow-[0_10px_100px_rgb(0_0_0_/_10%)] z-[1000] md:overflow-visible md:py-6'>
      <div className='md:flex md:items-center'>
        <div className='flex items-center justify-center cursor-pointer'>
          <Image
@@ -62,18 +77,16 @@ export default function Nav() {
        }`}
      >
        <ul className='flex cursor-pointer md:grid md:gap-y-8'>
-         <li className='mr-14 text-[15px] font-bold uppercase tracking-wider md:block md:px-[2rem] md:py-[2.8rem] md:text-[1.6rem] md:text-[#333] md:text-right md:border-y md:border-solid md:border-[#eee] md:mr-0 md:pr-20 transition duration-300 ease-linear hover:text-rose-400 '>
-           <Link href='#home'>home</Link>
-         </li>
-         <li className='mr-14 text-[15px] font-bold uppercase tracking-wider md:block md:px-[2.5rem] md:py-[2.8rem] md:text-[1.6rem] md:text-[#333] md:text-right md:border-b md:border-solid md:border[#eee] md:mr-0 md:pr-20 md:-mt-8 transition duration-300 ease-linear hover:text-rose-400'>
-           <Link href='#about'>about</Link>
-         </li>
-         <li className='mr-14 font-bold uppercase tracking-wider md:block md:px-[2.5rem] md:py-[2.8rem] md:text-[1.6rem] md:text-[#333] md:text-right md:border-b md:border-solid md:border[#eee] md:mr-0 md:pr-20 md:-mt-8 transition duration-300 ease-linear text-[15px] hover:text-rose-400'>
-           <Link href='#project'>projects</Link>
-         </li>
-         <li className='mr-8 font-bold uppercase tracking-wider md:block md:px-[2.5rem] md:py-[2.8rem] md:text-[1.6rem] md:text-[#333] md:text-right md:border-b md:border-solid md:border[#eee] md:mr-0 md:pr-20 md:-mt-8 transition duration-300 ease-linear text-[15px] hover:text-rose-400'>
-           <Link href='#contact'>contact</Link>
-         </li>
+        {menuItems.map((menuItem, index) => (
+          <ListItems 
+            key={index}
+            href={menuItem.href}
+            text={menuItem.text}
+          />
+        ))}
+        <li className='mr-12 text-[15px] font-bold uppercase tracking-wider md:block md:px-[2rem] md:py-[2.8rem] md:text-[1.6rem] md:text-[#333] md:text-right md:border-y md:border-solid md:border-[#eee] md:mr-0 md:pr-20 transition duration-300 ease-linear hover:text-rose-400 '>
+           <a href='/files/Azeezat-Resume.pdf' download>resume</a>
+        </li>
        </ul>
      </div>
    </nav>
