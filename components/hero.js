@@ -46,7 +46,7 @@ export default function Hero() {
 
      <div className='flex flex-col items-center mt-48 md:mt-60 '>
        <h1 className='text-[60px] font-extrabold tracking-wider text-black uppercase mb-8 md:text-[85px] md:text-center md:mb-12'>
-         hey, i&apos;m azeezat olaitan
+         hey, i&apos;m azeezat oyeleke
        </h1>
        <p className='block max-w-[700px] break-words text-[21px] text-center text-[#555] mb-14 md:text-[38px] md:max-w-[92%] md:mb-20'>
          A highly motivated Frontend Web Developer that loves building Websites
