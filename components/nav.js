@@ -32,7 +32,7 @@ export default function Nav() {
            alt='profile-pic'
          />
          <span className='font-bold transition duration-300 ease-linear text-[17px] md:text-[34px]  hover:text-rose-400'>
-           AZEEZAT OLAITAN
+           AZEEZAT OYELEKE
          </span>
        </div>
        <div className='hidden md:block md:relative md:left-[300px]'>
