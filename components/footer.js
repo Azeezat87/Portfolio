@@ -34,7 +34,7 @@ export default function Footer() {
       <div className='p-10 flex justify-between md:flex-col md:pt-40 md:px-0 md:mb-40'>
         <div className='md:absolute md:mt-24'>
           <h3 className='uppercase font-bold text-[22px] tracking-widest mb-5 md:text-8 md:text-[40px] md:font-semibold md:mb-6'>
-            azeezat olaitan
+            azeezat oyeleke
           </h3>
           <p className='text-base text-gray-300 max-w-[400px] md:min-w-[700px] md:text-3xl md:pr-10 md:leading-10'>
             A highly motivated Frontend Web Developer that loves building
@@ -59,7 +59,7 @@ export default function Footer() {
       <div className='px-10 flex justify-between md:p-0 md:mt-4 md:items-center'>
         <small className='text-gray-300 md:text-[24px]'>
           © Copyright {new Date().getFullYear()}. Made by{' '}
-          <b className='underline tracking-wider'>Azeezat Olaitan</b>
+          <b className='underline tracking-wider'>Azeezat Oyeleke</b>
         </small>
         <p className='uppercase text-gray-300 text-[18px] md:tracking-wider font-bold md:text-[30px]'>
           <Link href='#home'>home</Link>
